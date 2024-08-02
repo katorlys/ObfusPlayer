@@ -4,8 +4,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     java
     kotlin("jvm") version "1.8.0"
-    id("net.minecrell.plugin-yml.bukkit") version "0.5.3" // Documentation: https://github.com/Minecrell/plugin-yml
-    id("com.github.johnrengelman.shadow") version "8.1.0" // Documentation: https://github.com/johnrengelman/shadow
+    id("net.minecrell.plugin-yml.bukkit") version "0.6.0" // Documentation: https://github.com/Minecrell/plugin-yml
+    id("com.github.johnrengelman.shadow") version "8.1.1" // Documentation: https://github.com/johnrengelman/shadow
 }
 
 val spigotVersion : String by project
@@ -41,9 +41,12 @@ bukkit {
     main = pluginMain
     author = pluginAuthor
     description = pluginDescription
-    // commands {
-    //     register("examplecommand")
-    // }
+    commands {
+        register("hide")
+    }
+    permissions {
+        register("obfusplayer.hide")
+    }
 }
 
 tasks {
