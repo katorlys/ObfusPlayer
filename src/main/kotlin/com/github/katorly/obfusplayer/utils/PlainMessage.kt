@@ -149,7 +149,7 @@ fun Player.sa(message: String) {
         *TextComponent.fromLegacyText(
             message.color(),
         ),
-    ) // skipcq: KT-P1004
+    )
 }
 
 /**
