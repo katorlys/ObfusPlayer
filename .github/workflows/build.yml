@@ -1,10 +1,12 @@
 name: Build
+
 on:
   push:
     branches:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
   build:
     name: Build
@@ -18,7 +20,10 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '17'
-      - name: Build and analyze
-        uses: gradle/wrapper-validation-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+      - name: Build with Gradle
+        run: ./gradlew shadowJar
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: plugin-jars
+          path: build/libs/*.jar

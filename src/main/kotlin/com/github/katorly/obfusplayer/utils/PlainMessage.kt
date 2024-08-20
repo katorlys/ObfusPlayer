@@ -143,7 +143,7 @@ fun bb(plugin: JavaPlugin, message: String, seconds: Number = 1, color: BarColor
  *
  * @param message
  */
-fun Player.sa(message: String) {
+fun Player.sa(message: String) { // skipcq: KT-P1004
     this.spigot().sendMessage(
         ChatMessageType.ACTION_BAR,
         *TextComponent.fromLegacyText(
