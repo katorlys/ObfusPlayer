@@ -3,7 +3,7 @@ package com.github.katorly.obfusplayer
 import org.bukkit.plugin.java.JavaPlugin
 
 class ObfusPlayer: JavaPlugin() {
-    companion object {
+    companion object { // skipcq: KT-W1047
         lateinit var INSTANCE: ObfusPlayer
             private set
     }
