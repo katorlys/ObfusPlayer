@@ -14,13 +14,13 @@ class CommandHandler {
          */
         fun registerCommands() {
             val commands = arrayOf(
-                "hide"
+                "hide",
             )
             val excutors = arrayOf<CommandExecutor>(
-                Chide()
+                Chide(),
             )
             val completers = arrayOf<TabCompleter>(
-                Chide()
+                Chide(),
             )
             for (i in commands.indices) {
                 Bukkit.getPluginCommand(commands[i])!!.setExecutor(excutors[i])

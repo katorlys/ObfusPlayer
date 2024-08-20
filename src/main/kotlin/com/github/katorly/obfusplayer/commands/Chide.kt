@@ -43,7 +43,7 @@ class Chide : TabExecutor {
         sender: CommandSender,
         command: Command,
         label: String,
-        args: Array<String>
+        args: Array<String>,
     ): List<String>? {
         if (sender !is Player) {
             return null
