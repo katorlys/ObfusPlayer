@@ -26,7 +26,7 @@ import org.bukkit.scheduler.BukkitRunnable
 fun String.color(): String {
     return this.multiReplace(
         "&" to "§",
-        "§§" to "&"
+        "§§" to "&",
     )
 }
 
@@ -145,9 +145,10 @@ fun bb(plugin: JavaPlugin, message: String, seconds: Number = 1, color: BarColor
  */
 fun Player.sa(message: String) {
     this.spigot().sendMessage(
-        ChatMessageType.ACTION_BAR, *TextComponent.fromLegacyText(
-            message.color()
-        )
+        ChatMessageType.ACTION_BAR,
+        *TextComponent.fromLegacyText(
+            message.color(),
+        ),
     )
 }
 

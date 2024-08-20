@@ -8,9 +8,9 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1" // Documentation: https://github.com/johnrengelman/shadow
 }
 
-val spigotVersion : String by project
-val pluginGroup : String by project
-val pluginVersion : String by project
+val spigotVersion: String by project
+val pluginGroup: String by project
+val pluginVersion: String by project
 
 group = project.property("pluginGroup") as String
 version = project.property("pluginVersion") as String

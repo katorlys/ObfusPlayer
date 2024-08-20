@@ -8,7 +8,6 @@ import org.bukkit.entity.Player
 import org.bukkit.scoreboard.Team
 import java.util.*
 
-
 private val obfuscatedPlayers = HashMap<UUID, Boolean>()
 private val scoreboard = Bukkit.getScoreboardManager()!!.mainScoreboard
 

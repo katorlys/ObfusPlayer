@@ -17,11 +17,6 @@ Will not obfuscate player's name in chat.
 ## Permissions
 - `obfusplayer.use` To use `/hide` command.
 
-## Compile
-```shell
-./gradlew shadowJar
-```
-
 ## Notice
 - Test before reviewing. Please don't leave bad reviews if you dislike it.
 - If you find a bug, still don't know how to use the plugin, or have new features to suggest, make sure you're using the lastest version of the plugin and then report bugs [on Github](https://github.com/katorlys/ObfusPlayer/issues). DO NOT use the review section to do these things, or you won't receive any support!
